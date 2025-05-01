@@ -39,16 +39,24 @@ class Solution{
 int main()
 {
     int n;
+    bool res;
     cin>>n;
     vector<int>vis(n,0);
     vector<vector<int>>adj(n);
-    adj[0]={1};
-    adj[1]={0,2,4};
-    adj[2]={1,5};
-    adj[3]={4};
-    adj[4]={1,3};
-    adj[5]={2};
+    // adj[0]={1};
+    // adj[1]={0,2,4};
+    // adj[2]={1,5};
+    // adj[3]={4};
+    // adj[4]={1,5};
+    // adj[5]={2};
+
+    adj[0]={};
+    adj[1]={2};
+    adj[2]={1,3,4};
+    adj[3]={2};
+    adj[4]={2};
     Solution sol;
-    bool res = sol.checkCycle(n,adj,vis);
+    res = sol.checkCycle(n,adj,vis);
     cout<<res<<endl;
+    
 }
