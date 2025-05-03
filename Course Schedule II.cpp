@@ -44,7 +44,16 @@ class Solution {
         }
     };
 
-int main()
+    int main()
 {
-
+    int n;
+    cin>>n;
+    vector<vector<int>>pre_req(n);
+    Solution sol;
+    vector<int>res;
+    res = sol.findOrder(n ,pre_req);
+    for(auto x : res)
+    {
+        cout<<x<<" ";
+    }
 }
