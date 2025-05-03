@@ -34,7 +34,7 @@ int main()
     vector<vector<int>>adj(n+1);
     vector<int>vis(n+1 , -1);
 
-    vis[1]=0;
+    vis[1]=0;  
 
     // adj[1]={2};
     // adj[2]={3,6};
